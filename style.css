@@ -97,11 +97,21 @@ z-index: 1;
     border-radius: 1rem;
     width: 35rem;
  }
- .card-header {
+ .card-header,.billing, .card-footer {
 display: flex;
 justify-content: space-between;
 align-items: center;
  }
+ .billing {
+    justify-content:center;
+    margin: 30px 0;
+ }
+.card-header {
+    margin-bottom: 20px;
+}
+.slider {
+    width: 100%;
+}
 
   
 
