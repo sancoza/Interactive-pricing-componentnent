@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+:root {
+    --FullSliderBar: #a5f3eb;
+--SliderBackround: #10d5c2;
+--DiscountBackground: #feece7;
+--DiscountText: #ff8c66;
+--CTAText: #bdccff;
+--PricingComponentBackground: hsl (0, 0%, 100%);
+--MainBackground: #fafbff;
+--EmptySliderBar: #eaeefb;
+--ToggleBackground: #cdd7ee;
+--Text: #858fad;
+--TextCTABackground: #293356;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    background-image: url(./images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    margin: 0 auto;
+    width: 80%;
+    
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+.title-text {
+z-index: 1;
+}
+.pattern-circles {
+    z-index: -1;
+    position: absolute;
+}
