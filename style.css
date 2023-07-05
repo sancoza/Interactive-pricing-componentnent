@@ -22,14 +22,19 @@ body {
   font-size: 15px;
   background-image: url(./images/bg-pattern.svg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+color: var(--Text);
+
+
 }
 a {
   text-decoration: none;
 }
-li {
+ul li {
   list-style: none;
+  padding: 5px 5px 5px 0;
+}
+ul li img {
+    margin-right: 5px;
 }
 .container {
   margin: 0 auto;
@@ -48,6 +53,12 @@ li {
 }
 .title-text {
   z-index: 1;
+  text-align: center;
+}
+
+.title-text h1{
+    color: var(--TextCTABackground);
+
 }
 .pattern-circles {
   z-index: -1;
@@ -66,7 +77,7 @@ li {
   font-size: 20px; /* 1 */
   height: 1em;
   width: 2em;
-  background: #bdb9a6;
+  background: var(--FullSliderBar);
   border-radius: 1em;
 }
 
@@ -94,6 +105,7 @@ li {
   padding: 20px;
   border-radius: 1rem;
   width: 35rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .card-header,
 .billing,
@@ -109,11 +121,20 @@ li {
 .card-header {
   margin-bottom: 20px;
 }
+.page-views {
+    color: var(--Text);
+} 
+.month{
+    color: var(--TextCTABackground);
+    font-size: 1.7rem;
+}
 .slider {
   width: 100%;
 }
 
 input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
   margin: 10px 0;
   width: 100%;
 }
@@ -130,10 +151,10 @@ input[type="range"]:focus {
 }
 
 .slider::-webkit-slider-thumb {
-    box-shadow: 5px 5px 5px 2px hsla(174, 77%, 80%, 0.6);
+    box-shadow: 2px 3px 4px 1px hsla(174, 77%, 80%, 0.5);
     border: 0px solid #000000;
-    height: 3.8rem;
-    width: 3.8rem;
+    height: 3rem;
+    width: 3rem;
     border-radius: 50%;
     background-color: var(--SliderBackround);
     background-image: url('./images/icon-slider.svg');
@@ -145,5 +166,23 @@ input[type="range"]:focus {
 .slider:active,
 .slider:hover {
   background-color: var(--FullSliderBar);
+}
+.switch {
+    margin: 20px;
+    cursor: pointer;
+}
+.discount{
+    background: var(--DiscountBackground);
+    padding: 5px 8px;
+    border-radius: 1rem;
+    color: var(--DiscountText);
+    margin-left: 20px;
+}
+.btn{
+    background: var(--TextCTABackground);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 2rem;
+    cursor: pointer;
 }
 
