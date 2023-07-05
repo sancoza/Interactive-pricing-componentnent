@@ -31,18 +31,13 @@
       </div>
       <div class="card">
         <div class="card-header">
-          <h3 class="page-views">100K PAGEVIEWS</h3>
-          <h2 class="month">$16.00 <span>/month</span></h2>
+          <h3 class="page-views"><span id="pageView">100k </span> PAGEVIEWS</h3>
+          <h2 class="month">$<span id="cost">16</span> /month</h2>
         </div>
         
         <div class="card-body">
-          <input
-								type="range"
-								name="range"
-								class="slider"
-								id="range"
-								aria-label="input"
-							/>
+          <div class="range-slider">
+            <input type="range" id="price-slider" class="range" min="0" max="4" value="2">
           <div class="billing">
             <span>Monthly Billing</span>
             <label class="switch"><input type="checkbox" />    <div></div>
@@ -51,6 +46,7 @@
             <p class="discount">25% discount</p>
           </div>
         </div>
+        <hr>
         <div class="card-footer">
           <ul>
             <li><img src="./images/icon-check.svg" alt="">Unlimited websites</li>

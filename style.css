@@ -55,7 +55,10 @@ ul li img {
   z-index: 1;
   text-align: center;
 }
-
+hr {
+    opacity: 0.2;
+    margin-bottom: 10px;
+}
 .title-text h1{
     color: var(--TextCTABackground);
 
@@ -128,44 +131,35 @@ ul li img {
     color: var(--TextCTABackground);
     font-size: 1.7rem;
 }
-.slider {
-  width: 100%;
-}
-
-input[type="range"] {
-    -webkit-appearance: none;
-    appearance: none;
-  margin: 10px 0;
-  width: 100%;
-}
-input[type="range"]:focus {
-  outline: none;
-}
-
-.slider {
+input#price-slider {
   width: 100%;
   -webkit-appearance: none;
   appearance: none;
-  height: 1rem;
-  background: var(--EmptySliderBar);
+  border-radius: 5px;
+  height: 10px;
+  background: linear-gradient(
+    to right,
+    hsl(174, 77%, 80%) 0%,
+    hsl(174, 77%, 80%) 50%,
+    hsl(224, 65%, 95%) 0%,
+    hsl(224, 65%, 95%) 100%
+  );
 }
 
-.slider::-webkit-slider-thumb {
-    box-shadow: 2px 3px 4px 1px hsla(174, 77%, 80%, 0.5);
-    border: 0px solid #000000;
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    background-color: var(--SliderBackround);
-    background-image: url('./images/icon-slider.svg');
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    -webkit-appearance: none;
+input#price-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: hsl(174, 86%, 45%);
+  background-image: url(./images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0px 7px 10px 4px rgba(16, 213, 194, 0.2);
 }
-.slider:active,
-.slider:hover {
-  background-color: var(--FullSliderBar);
+
+input#price-slider::-webkit-slider-thumb:hover {
+  background-color: hsl(174, 77%, 80%);
 }
 .switch {
     margin: 20px;
@@ -185,4 +179,5 @@ input[type="range"]:focus {
     border-radius: 2rem;
     cursor: pointer;
 }
+
 
